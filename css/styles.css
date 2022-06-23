@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.mentorkart{
+    display: flex;
+    width: 100%;
+    
+}
+
+/************************************  Left  *************************************/
+
+.mentorkart .mentor-img{
+    width: 60%;
+    background-color: #F1F2F4;
+    /* height: 100vh; */
+}
+.mentorkart .mentor-img .circle-1{
+    position: absolute;
+left: 50%;
+/* top: -23%; */
+
+}
+.mentorkart .mentor-img .circle-2{
+    position: absolute;
+    top: 48%;
+
+}
+.mentorkart .mentor-img .circle-3{
+    position: absolute;
+    left: 8%;
+    top: 10rem;
+
+}
+.mentorkart .mentor-img .circle-4{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+.mentorkart .mentor-img .logo{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.mentorkart .mentor-img .vector{
+    position: relative;
+    /* bottom: 10%; */
+    left: 77%;
+    opacity: 0.3;
+}
+.mentorkart .mentor-img .center-img{
+    max-width: 50%;
+    position: relative;
+    margin-top: 6rem;
+    /* left: 25%; */
+}
+.mentorkart .mentor-img .mentor-img-text .center-text h4{
+    font-weight: bold;
+    font-size: 32px;
+}
+.mentorkart .mentor-img .mentor-img-text .center-text p{
+    font-size: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+.mentorkart .mentor-img .mentor-img-text .center-text .dots{
+    background:#1D3557;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 12px;
+    margin-top: 40px;
+    margin-right: 16px;
+    opacity: .2;
+    /* outline: none; */
+    width: 12px;
+}
+.mentorkart .mentor-img .mentor-img-text .center-text .active{
+    opacity: 1 !important;
+}
+.mentorkart .mentor-img .mentor-img-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/***************************  Right  *******************************/
+
+.mentorkart .mentor-form{
+    background-color: white;
+    width: 40%;
+    /* height: 100vh; */
+    z-index: 1;
+}
+.mentorkart .mentor-form h5{
+    padding: 35px 37px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.mentorkart .mentor-form .member{
+    padding-left: 37px;
+    margin-top: -33px;
+    font-size: 16px;
+}
+.mentorkart .mentor-form .member a{
+    color: #469997;
+    border-bottom: 1px dashed #0F1113;
+}
+.mentorkart .mentor-form .member a:hover{
+    text-decoration: none;
+}
+.mentorkart .mentor-form .phone{
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.mentor-form .dropdown img{
+    max-width: 25px;
+}
+.mentor-form .dropdown button{
+    background-color: #F1F2F4;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    margin-left: 37px;
+    
+}
+.mentor-form .input-phone{
+    background-color: #F1F2F4;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    margin-left: 37px;
+    height: 40px;
+    width: 237px;
+    padding-left: 10px;
+}
+
+.mentor-form .agree{
+    padding: 20px 37px;
+}
+.mentor-form .agree a{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.mentor-form .otp{
+    margin: 10px 37px;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #FF9494 14.64%, #FF7070 85.36%);
+}
+
+
+/********************  Responsive  ******************************/
+
+
+@media(max-width:1038px){
+    .mentor-form .input-phone{
+        margin-left: 10px;
+    }
+}
+@media(max-width:992px){
+    *{
+        /* overflow: auto; */
+    }
+    .mentorkart{
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .mentorkart .mentor-img{
+        width: 100%;
+    background-color: white;
+    /* height: 44vh; */
+    }
+    .mentorkart .mentor-form{
+        width: 100%;
+       text-align: center; 
+    }
+    .mentorkart .mentor-img .center-img {
+    max-width: 28%;
+    position: relative;
+    margin-top: 2rem;
+    }
+    .mentorkart .mentor-img .circle-1,
+    .mentorkart .mentor-img .circle-2,
+    .mentorkart .mentor-img .circle-3,
+    .mentorkart .mentor-img .circle-4,
+    .mentorkart .mentor-img .vector{
+        display: none;
+    
+    }
+    .mentorkart .mentor-form h5{
+        padding: 20px 37px;
+    }
+    .mentorkart .mentor-form .member{
+        margin-left: -223px;
+        /* text-align: left; */
+        margin-top: -15px;
+    }
+    .mentor-form .otp{
+        width: 50%;
+    }
+    .mentorkart .mentor-img .mentor-img-text .center-text h4{
+        font-size: 25px;
+    }
+    .mentorkart .mentor-img .mentor-img-text .center-text p{
+        font-size: 16px;
+    }
+    .mentorkart .mentor-img .mentor-img-text .center-text .dots{
+        margin-top: 20px;
+    }
+       
+}
